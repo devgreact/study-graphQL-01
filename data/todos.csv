@@ -1,0 +1,8 @@
+id,title,completed,date,weather
+1,공부중입니다.,false,2023-04-01,1
+2,리액트공부,false,2023-04-02,2
+3,html 공부,true,2023-04-03,2
+4,css 공부,true,2023-04-04,3
+5,js 공부,false,2023-04-05,3
+6,git공부,true,2023-04-06,5
+7,서버공부,true,2023-04-07,4
