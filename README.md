@@ -163,3 +163,22 @@ Object.keys(database).forEach((key) => {
 
 module.exports = database;
 ```
+
+# 정보활용
+
+## GET : 정보 받아오기
+
+Postman : GET http://localhost:4000/api/todo
+Postman : GET http://localhost:4000/api/todo/2
+
+## POST : 정보 입력하기
+
+Postman : POST http://localhost:4000/api/todo
+
+## PUT/PATCH : 정보 수정하기
+
+Postman : PUT http://localhost:4000/api/todo/2
+
+## DELETE : 정보 삭제하기
+
+Postman : DELETE http://localhost:4000/api/todo/2
