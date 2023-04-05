@@ -1,14 +1,59 @@
 # REST-API 복습
+- 소프트웨어가 정보를 주고 받는 방식
+- GraphQL 이전부터 사용
 
-## Node.js 프로젝트 생성
+- client > Request 
+- client < Response (data)
+
+- 데이터를 주고받을 주체들간 약속된 형식
+- URI 형식(어떤 정보를) + 요청방식(어떻게 할 것인가)
+  - Get       : 정보받아오기
+  - POST      : 정보 입력하기
+  - PUT/PATCH : 정보 수정하기
+  - DELETE    : 정보 삭제하기
+
+## 1. Node.js 프로젝트 생성
 
 npm init
 
-## index.js 실행파일 생성
+## 2. index.js 실행파일 생성
 
 ```js
   console.log("hello);
 ```
+
+## 3. nodemon 설치 및 npm i 실행
+```
+  npm install -g nodemon
+  npm start
+```
+
+
+# 정보활용
+
+## GET : 정보 받아오기
+
+Postman : GET http://localhost:4000/api/todo
+Postman : GET http://localhost:4000/api/todo/2
+
+## POST : 정보 입력하기(body, x-www-form-urlencode)
+
+Postman : POST http://localhost:4000/api/todo
+
+## PUT/PATCH : 정보 수정하기
+
+Postman : PUT http://localhost:4000/api/todo/2
+
+## DELETE : 정보 삭제하기
+
+Postman : DELETE http://localhost:4000/api/todo/2
+
+## RESTAPI 의 한계
+- 필요로 하지 않은 정보까지 전부 받아오게 됨
+- 낭비되는 데이터의 양도 많아짐(OverFetching 문제)
+- 내가 원하는 정보가 여러곳에 흩어진 경우에 
+- 요청을 여러번 보내는 문제(UnderFetching 문제)
+- 이를 해소하기 위해서 GraphQL 이 나옴
 
 ## expres 서버 설치
 
